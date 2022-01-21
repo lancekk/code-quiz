@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,12 @@
   <title>Quiz</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
+
 <body>
   <div class="container">
     <header>
-      <a href="#">View High Scores</a>
-      <span class='timer'></span>
+      <button id='score_link'>View High Scores</button>
+      <span id='timer'></span>
     </header>
 
     <div id='instructions'>
@@ -31,18 +33,22 @@
     </div>
 
     <div id='score_saver' hidden>
+      <h3 id="score_message">Your final score is:</h3>
       <textarea id='initials' placeholder="Enter your initials"></textarea>
+      <button type="button" id="score_button">Save</button>
     </div>
 
     <div id='scores' hidden>
-      <ul id='score_list' />
-      <button id='restart'>Back to start</button>
-      <button id='clear_scores'>Clear high scores</button>
+      <ul id='score_list'></ul>
+      <div id='score_controls'>
+        <button id='restart'>Back to start</button>
+        <button id='clear_scores'>Clear high scores</button>
+      </div>
     </div>
 
   </div>
 
   <script src='./assets/js/script.js'></script>
 </body>
-</html>
 
+</html>

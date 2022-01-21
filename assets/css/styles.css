@@ -1,0 +1,18 @@
+header {
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  max-width: 500px;
+}
+
+li {
+  background-color: darkslateblue;
+  color: white;
+}
+
+li:hover {
+  background-color: lightslategray;
+}
+
